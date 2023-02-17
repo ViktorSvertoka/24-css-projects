@@ -1,6 +1,13 @@
-# goit-markup-hw-01
+# ДОМАШНЕ ЗАВДАННЯ № 1
+
+## goit-markup-hw-01
 
 ---
+
+![GitHub actions settings](./assets/task-1.png)
+![GitHub actions settings](./assets/task-2.png)
+![GitHub actions settings](./assets/task-3.png)
+![GitHub actions settings](./assets/task-4.png)
 
 1. Створи репозиторій goit-markup-hw-01.
 
