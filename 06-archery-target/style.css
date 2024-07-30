@@ -1,0 +1,51 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --color-light: lightgray;
+  --color-dark: darkgray;
+}
+
+.container {
+}
+
+.rings,
+.ring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ring {
+  border-radius: 50%;
+}
+
+.ring-1 {
+  height: 200px;
+  width: 200px;
+  background: black;
+}
+
+.ring-2 {
+  height: 150px;
+  width: 150px;
+  background: blue;
+}
+
+.ring-3 {
+  height: 100px;
+  width: 100px;
+  background: red;
+}
+
+.bullseye {
+  height: 50px;
+  width: 50px;
+  background: yellow;
+}
