@@ -11,6 +11,17 @@ body {
   --color-dark: darkgray;
 }
 
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -22,31 +33,23 @@ body {
   min-width: 320px;
 }
 
-.square {
+.circle {
   height: 1.5em;
   width: 1.5em;
+  background: #000;
   margin: 0.5em;
-  animation: rotate infinite 1.5s;
+  border-radius: 50%;
+  animation: pulse infinite 1s;
 }
 
-.square1 {
-  background: red;
-}
-
-.square2 {
-  background: orange;
-}
-
-.square3 {
-  background: blue;
-}
-
-@keyframes rotate {
+@keyframes pulse {
   from {
-    transform: rotate(-45deg);
+    background: var(--color-dark);
   }
 
   to {
-    transform: rotate(45deg);
+    background: var(--color-light);
+    height: 1.6em;
+    width: 1.6em;
   }
 }
