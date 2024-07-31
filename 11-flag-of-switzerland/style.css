@@ -1,0 +1,56 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: #000000;
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --white: #ffffff;
+  --red: #ff0002;
+  --flag-hw: 200px;
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flag-swiss {
+  height: var(--flag-hw);
+  width: var(--flag-hw);
+  background: var(--red);
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.cross1 {
+  height: calc(var(--flag-hw) * 3 / 16);
+  width: calc(var(--flag-hw) * 5 / 8);
+  background: var(--white);
+}
+
+.cross2 {
+  height: calc(var(--flag-hw) * 5 / 8);
+  width: calc(var(--flag-hw) * 3 / 16);
+  background: var(--white);
+  position: absolute;
+}
