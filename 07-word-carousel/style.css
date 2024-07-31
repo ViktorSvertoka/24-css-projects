@@ -1,0 +1,56 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --bg-word: #5134ff;
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1::after {
+  content: '';
+  animation: 6s swap infinite;
+  background: var(--bg-word);
+  padding: 10px;
+  color: white;
+  margin-left: 4px;
+}
+
+@keyframes swap {
+  0% {
+    content: 'singing';
+  }
+  25% {
+    content: 'cats';
+  }
+  50% {
+    content: 'coding';
+  }
+  75% {
+    content: 'Scrimba';
+  }
+  100% {
+    content: 'karaoke';
+  }
+}
