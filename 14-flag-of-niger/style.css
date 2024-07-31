@@ -1,0 +1,64 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: #000000;
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --orange: #e15307;
+  --white: #ffffff;
+  --green: #10af2a;
+  --flag-height: 200px;
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flag-niger {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 7 / 6);
+  margin: 1em auto;
+  display: grid;
+}
+
+.orange {
+  background: var(--orange);
+}
+
+.white {
+  background: var(--white);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background: var(--green);
+}
+
+.circle {
+  background: var(--orange);
+  height: calc(var(--flag-height) / 3 * 0.85);
+  width: calc(var(--flag-height) / 3 * 0.85);
+  border-radius: 50%;
+  position: absolute;
+}
