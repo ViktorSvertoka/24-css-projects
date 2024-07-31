@@ -1,0 +1,59 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: #000000;
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --red: #ed2938;
+  --white: #ffffff;
+  --blue: #002495;
+  --flag-height: 150px;
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flag-france {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 3 / 2);
+  margin: 2em auto;
+  /* display: flex; */
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* .stripe {
+  flex-grow: 1;
+} */
+
+.red {
+  background: var(--red);
+}
+
+.blue {
+  background: var(--blue);
+}
+
+.white {
+  background: var(--white);
+}
