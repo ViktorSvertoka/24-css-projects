@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: #000000;
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --blue: #0269a6;
+  --yellow: #fecc00;
+  --flag-height: 300px;
+  --flag-width: calc(var(--flag-height) * 8 / 5);
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flag-sweden {
+  height: var(--flag-height);
+  width: var(--flag-width);
+  background: var(--blue);
+  display: flex;
+  margin: 2em auto;
+  position: relative;
+}
+
+.stripe {
+  background: var(--yellow);
+  height: calc(var(--flag-height) * 1 / 5);
+}
+
+.cross1 {
+  align-self: center;
+  width: 100%;
+}
+
+.cross2 {
+  width: var(--flag-height);
+  position: absolute;
+  transform: rotate(90deg);
+  top: calc(var(--flag-height) * 4 / 10);
+  right: calc(var(--flag-width) * 5 / 16);
+}
