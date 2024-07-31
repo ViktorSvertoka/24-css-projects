@@ -1,0 +1,57 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: #000000;
+}
+
+:root {
+  --font-family: 'Karla', sans-serif;
+  --white: #ffffff;
+  --red: #fc3e32;
+  --green: #007e39;
+  --flag-height: 300px;
+}
+
+.hide {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flag-madagascar {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 1.5);
+  margin: 2em auto;
+  display: flex;
+}
+
+.white {
+  background: var(--white);
+  width: calc(var(--flag-height) / 2);
+}
+
+.red {
+  background: var(--red);
+  height: calc(var(--flag-height) / 2);
+  width: var(--flag-height);
+}
+
+.green {
+  background: var(--green);
+  height: calc(var(--flag-height) / 2);
+  width: var(--flag-height);
+}
