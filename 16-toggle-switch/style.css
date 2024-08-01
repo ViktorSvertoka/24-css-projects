@@ -1,0 +1,47 @@
+:root {
+  --font-family: 'Karla', sans-serif;
+  --body-bg: #af95d7;
+  --toggle-switch-bg: #232428;
+  --toggle-border: #232428;
+  --toggle-bg: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-bg);
+  font-family: var(--font-family);
+}
+
+.toggle-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.toggle-input {
+  display: none;
+}
+
+label {
+  width: 100px;
+  height: 40px;
+  border: 3px solid var(--toggle-border);
+  border-radius: 40px;
+  padding: 0.25em;
+  background: var(--toggle-bg);
+}
+
+.toggle-switch {
+  height: 40px;
+  width: 40px;
+  background: var(--toggle-switch-bg);
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.toggle-input:checked ~ .toggle-switch {
+  transform: translateX(calc(100px - 40px));
+}
