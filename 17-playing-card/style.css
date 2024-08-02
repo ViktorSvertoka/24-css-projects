@@ -1,0 +1,49 @@
+:root {
+  --font-family: 'Karla', sans-serif;
+  --body-bg: #af95d7;
+  --toggle-switch-bg: #232428;
+  --toggle-border: #232428;
+  --toggle-bg: #ffffff;
+  --card-height: 200px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-bg);
+  font-family: var(--font-family);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  border: 1px solid #000000;
+  height: var(--card-height);
+  width: calc(var(--card-height) * 2 / 3);
+  border-radius: 5px;
+  display: grid;
+  background: var(--toggle-bg);
+  padding: 0.5em;
+}
+
+.top > div:first-child,
+.bottom > div:first-child {
+  padding-left: 2px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+.bottom {
+  transform: rotate(180deg);
+}
