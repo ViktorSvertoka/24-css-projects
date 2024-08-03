@@ -1,0 +1,59 @@
+:root {
+  --font-family: 'Karla', sans-serif;
+  --jeopardy-blue: #060ce6;
+  --font-color-main: #ffffff;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+}
+
+p,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  height: 200px;
+  width: 350px;
+  background: var(--jeopardy-blue);
+  color: var(--font-color-main);
+  margin: 2em;
+  padding: 2em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-back {
+  display: none;
+}
+
+.card:hover .card-front {
+  display: none;
+}
+
+.card:hover .card-back {
+  display: block;
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+}
