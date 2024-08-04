@@ -1,0 +1,48 @@
+:root {
+  --font-family: 'Karla', sans-serif;
+  --stage-1: 25%;
+  --stage-2: 50%;
+  --stage-3: 75%;
+  --stage-4: 100%;
+  --progressbar-bg: lightgray;
+  --start: red;
+  --middle: blue;
+  --finish: green;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+.container {
+  width: 80%;
+  margin: 60px auto;
+}
+
+.progress-bar {
+  height: 40px;
+  background: var(--progressbar-bg);
+  border-radius: 20px;
+}
+
+.progress-status {
+  width: 10%;
+  height: 40px;
+  background: var(--start);
+  animation: 6s showprogress infinite;
+}
+
+@keyframes showprogress {
+  50% {
+    width: 50%;
+    background: var(--middle);
+  }
+
+  100% {
+    width: 100%;
+    background: var(--finish);
+  }
+}
